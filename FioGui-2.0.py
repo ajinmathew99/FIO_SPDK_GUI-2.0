@@ -81,8 +81,8 @@ button_color = "#009900"
 label_pad_y = 10
 entry_pad_y = 5
 button_pad_y = 20
-left_padding = 40  # Left padding
-top_padding = 40   # Top padding
+left_padding = 40  
+top_padding = 40   
 
 def browse_spdk_path():
     selected_path = tkFileDialog.askdirectory()
