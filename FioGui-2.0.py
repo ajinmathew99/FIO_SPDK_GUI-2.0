@@ -1,7 +1,7 @@
 import os
 import subprocess
 import Tkinter as tk
-import tkFileDialog
+import tkFileDialog as filedialog
 from ttk import Progressbar, Combobox
 
 def run_fio_command():
@@ -51,7 +51,7 @@ def run_fio_command():
         # Stop the progress bar after the command is executed
         progress_bar.stop()
 
-        output_file = tkFileDialog.asksaveasfilename(defaultextension=".txt", initialfile="seqread.txt", title="Save FIO Output")
+        output_file = filedialog.asksaveasfilename(defaultextension=".txt", initialfile=rw, title="Save FIO Output")
 
         if output_file:
             result_label.config(text="Fio Command executed successfully.\nOutput saved to {}.".format(output_file), fg="#006400")
@@ -85,7 +85,7 @@ left_padding = 40
 top_padding = 40   
 
 def browse_spdk_path():
-    selected_path = tkFileDialog.askdirectory()
+    selected_path = filedialog.askdirectory()
     if selected_path:
         spdkpath_entry.delete(0, tk.END)  
         spdkpath_entry.insert(0, os.path.join(selected_path, "spdk")) 
