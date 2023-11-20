@@ -3,8 +3,6 @@
 
 U need SPDK installed with Fio in your system to execute FIO using this GUI
 
-*This is developed under Python Version 2.0*
-
 you can follow the instructions given at SPDK fio_plugin respository to install SPDK with Fio
 
 Refer the link below:
