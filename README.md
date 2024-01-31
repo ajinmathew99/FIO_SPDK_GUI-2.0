@@ -9,12 +9,12 @@
 	Refer the link below:
 	https://github.com/spdk/spdk/blob/master/examples/nvme/fio_plugin/README.md
 
-# Usage
+# Installation
 1. Download the FIO_SPDK_GUI-2.0.zip file
 2. Extract the zip file
 3. Double-click on the FIO_SPDK_GUI-2.0.exe file to run the program
 
-# Features
+# Usage
 1. Select the path to the SPDK directory
 2. Enter the PCI address of the disk
 3. Enter the size of the test
